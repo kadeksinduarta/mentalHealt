@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* border: 1px solid black; */
 }
 
 html {
@@ -9,6 +10,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
 }
 
 /* AWAL style navbar */
@@ -69,6 +71,7 @@ body {
   display: flex;
   padding: 0.7rem 6%;
   align-items: center;
+  /* background-color: #f3f3f3; */
 }
 
 .home .informasi-utama {
@@ -114,16 +117,18 @@ body {
 .card-Problem {
   display: flex;
   justify-content: center;
-  padding: 0.7rem 6%;
+  padding: 1rem 6%;
   margin: 70px 0;
+  /* background-color: #f3f3f3; */
 }
 
 .card-Problem .card-1 {
   width: 40%;
-  background-color: #6ce5ff;
+  background-color: #ffffff;
   text-align: center;
   padding: 25px;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.5);
 }
 
 .card-1 h1 {
@@ -133,15 +138,16 @@ body {
 /* style section meditasi */
 /* style section home */
 .meditasi {
-  margin-top: 150px;
+  margin-top: 70px;
   display: flex;
   padding: 0.7rem 6%;
   align-items: center;
+  justify-content: center;
 }
 
 .meditasi .informasi-meditasi {
   width: 55%;
-  margin-bottom: 60px;
+
   /* background-color: #6ce5ff; */
 }
 
@@ -169,6 +175,55 @@ body {
 }
 
 .meditasi .informasi-meditasi a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 35px;
+  background-color: #6ce5ff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.Article {
+  margin-top: 70px;
+  display: flex;
+  padding: 0.7rem 6%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f3f3f3; */
+}
+
+.Article .informasi-Article {
+  width: 55%;
+  margin-bottom: 60px;
+  /* background-color: #6ce5ff; */
+}
+
+.Article .informasi-Article h1 {
+  font-size: 3rem;
+}
+
+.Article .informasi-Article h1 span {
+  color: #6ce5ff;
+  font-size: 2.7rem;
+}
+
+.Article .informasi-Article p {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  width: 85%;
+}
+
+.Article .gambar {
+  width: 45%;
+  /* background-color: #000; */
+}
+
+.Article .gambar img {
+  width: 100%;
+}
+
+.Article .informasi-Article a {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 35px;
@@ -281,5 +336,21 @@ footer {
   }
   .navbar .navbar-link a:hover::after {
     transform: scalex(20%);
+  }
+
+  .Article,
+  .meditasi {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .meditasi .informasi-meditasi,
+  .Article .informasi-Article {
+    width: 100%;
+  }
+
+  .Article .gambar,
+  .meditasi .gambar {
+    display: none;
   }
 }
